@@ -258,6 +258,7 @@ LOGGING = {
             'formatter': 'error_format',
         },
         'security': {
+            'level': 'INFO',
             'class': 'logging.FileHandler',
             'filename': 'security.log',
             'formatter': 'general_format',
@@ -300,7 +301,7 @@ LOGGING = {
         'django.security': {
             'handlers': ['security'],
             'propagate': True,
-            'level': 'ERROR',
+            'level': 'INFO',
         },
     }
 }
